@@ -1,14 +1,9 @@
 {
-  "title": "Genome App Title",
-  "description": "Short description of this Genome App.",
-  "github_url": "",
-  "version": "v1.0.0",
-  "tags": [
-    "ancestry",
-    "nutrition",
-    "cancer"
-  ],
-  "dependencies": [],
-  "data": ["ftp://ftp.ensembl.org/pub/release-90/fasta/homo_sapiens/dna/Homo_sapiens.GRCh38.dna.primary_assembly.fa.gz"],
-  "main_function": "count_variants.count_variants"
+	"title": "",
+	"description": "",
+	"github_url": "",
+	"version": "v1.0.0",
+	"tags": [],
+	"data": ["https://dl.dropboxusercontent.com/s/v43sctnmxljgwce/Homo_sapiens.GRCh38.dna.primary_assembly.fa"],
+	"main_function": ""
 }

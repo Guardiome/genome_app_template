@@ -1,8 +1,23 @@
 from gzip import open as gzip_open
 from json import dump
-from os.path import join
+from os.path import dirname, join
 
-from constants import DATA_DIRECTORY_PATH, OUTPUTS_DIRECTORY_PATH
+# ==============================================================================
+# Define constants
+# ==============================================================================
+PROJECT_DIRECTORY_PATH = dirname(dirname(__file__))
+
+DATA_DIRECTORY_PATH = join(PROJECT_DIRECTORY_PATH, 'data')
+
+ENVIRONMENT_DIRECTORY_PATH = join(PROJECT_DIRECTORY_PATH, 'environment')
+
+CODE_DIRECTORY_PATH = join(PROJECT_DIRECTORY_PATH, 'code')
+
+OUTPUTS_DIRECTORY_PATH = join(PROJECT_DIRECTORY_PATH, 'outputs')
+
+MEDIA_DIRECTORY_PATH = join(PROJECT_DIRECTORY_PATH, 'media')
+
+# ==============================================================================
 
 
 def count_variants():
