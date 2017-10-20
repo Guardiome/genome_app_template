@@ -2,8 +2,8 @@
 	"title": "",
 	"description": "",
 	"github_url": "",
-	"version": "v1.0.0",
+	"version": "1.0.0",
 	"tags": [],
-	"data": ["https://dl.dropboxusercontent.com/s/v43sctnmxljgwce/Homo_sapiens.GRCh38.dna.primary_assembly.fa"],
+	"data_urls": ["https://dl.dropboxusercontent.com/s/v43sctnmxljgwce/Homo_sapiens.GRCh38.dna.primary_assembly.fa"],
 	"main_function": ""
 }
