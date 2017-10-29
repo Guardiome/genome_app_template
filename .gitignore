@@ -23,7 +23,7 @@ environment/*
 !data/.gitkeep
 !environment/.gitkeep
 !code/.gitkeep
-!outputs/.gitkeep
+!output/.gitkeep
 !media/.gitkeep
 
 # ==============================================================================
