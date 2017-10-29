@@ -1,21 +1,14 @@
 from gzip import open as gzip_open
 from json import dump
 from os.path import dirname, join
-
+from pprint import pprint
 # ==============================================================================
 # Define constants
 # ==============================================================================
+
 PROJECT_DIRECTORY_PATH = dirname(dirname(__file__))
 
-DATA_DIRECTORY_PATH = join(PROJECT_DIRECTORY_PATH, 'data')
-
-ENVIRONMENT_DIRECTORY_PATH = join(PROJECT_DIRECTORY_PATH, 'environment')
-
-CODE_DIRECTORY_PATH = join(PROJECT_DIRECTORY_PATH, 'code')
-
-OUTPUTS_DIRECTORY_PATH = join(PROJECT_DIRECTORY_PATH, 'outputs')
-
-MEDIA_DIRECTORY_PATH = join(PROJECT_DIRECTORY_PATH, 'media')
+OUTPUT_DIRECTORY_PATH = join(PROJECT_DIRECTORY_PATH, 'output')
 
 # ==============================================================================
 
@@ -30,7 +23,7 @@ def count_variants():
     """
 
     # Count variants per chromosome
-    with gzip_open(join(DATA_DIRECTORY_PATH, 'genome.vcf.gz')) as f:
+    with gzip_open(join(PROJECT_DIRECTORY_PATH, 'data/person/genome.vcf.gz')) as f:
 
         counts = {}
         current_chromosome = None
@@ -59,11 +52,18 @@ def count_variants():
         styled_counts['Chromosome {}'.format(c)] = '{} variants'.format(n)
 
     # Save results to ../outputs/output.json
-    output_json_file_path = join(OUTPUTS_DIRECTORY_PATH, 'output.json')
+    output_json_file_path = join(OUTPUT_DIRECTORY_PATH, 'output.json')
 
     with open(output_json_file_path, 'w') as f:
         dump(styled_counts, f, indent=2, sort_keys=True)
 
+    # Summarize and display output.json
     print(
         'Counted the number of variants in each chromosome and saved the results to {}:'.
         format(output_json_file_path))
+    print('=' * 80)
+    pprint(styled_counts)
+    print('=' * 80)
+
+
+count_variants()
