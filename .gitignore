@@ -9,7 +9,9 @@
 data/*
 
 # except these files:
-!data/genome.vcf.gz
+!data/person/genome.vcf.gz
+!data/person/genome.vcf.gz.tbi
+!data/input.g2p
 
 # ==============================================================================
 # Do not track environment files because spro can get them.
@@ -21,9 +23,11 @@ environment/*
 # project folders to avoid them from being ignored.
 # ==============================================================================
 !data/.gitkeep
+!data/person/.gitkeep
+!data/reference/.gitkeep
 !environment/.gitkeep
 !code/.gitkeep
-!outputs/.gitkeep
+!output/.gitkeep
 !media/.gitkeep
 
 # ==============================================================================
