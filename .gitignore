@@ -6,9 +6,9 @@
 # package.json so spro can get them.
 # ==============================================================================
 # Ignore everything within data/, data/grch, and data/person:
-#data/*
-#data/grch/*
-#data/person/*
+data/*
+data/grch/*
+data/person/*
 
 # except:
 !data/input.g2p
