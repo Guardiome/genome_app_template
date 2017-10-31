@@ -5,17 +5,18 @@
 # larger files, which git cannot transfer, specify their download links in the
 # package.json so spro can get them.
 # ==============================================================================
-# Ignore everything within data/, data/grch, and data/person,
+# Ignore everything within data/, data/grch, and data/person:
 data/*
 data/grch/*
 data/person/*
 
-# except these files and directories:
+# except:
 !data/input.g2p
 !data/person/genome.vcf.gz
 !data/person/genome.vcf.gz.tbi
+
 # ==============================================================================
-# Do not track environment files because spro can get them.
+# Do not track environment files because spro manages environment/.
 # ==============================================================================
 environment/*
 
