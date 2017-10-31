@@ -1,19 +1,11 @@
- See https://git-scm.com/docs/gitignore to learn more about .gitignore file.
+# See https://git-scm.com/docs/gitignore to learn more about .gitignore file.
 
 # ==============================================================================
 # Track only files transferable with git (smaller files that are <100MB); for
 # larger files, which git cannot transfer, specify their download links in the
 # package.json so spro can get them.
 # ==============================================================================
-# Ignore everything within data/, data/grch, and data/person:
 data/*
-data/grch/*
-data/person/*
-
-# except:
-!data/input.g2p
-!data/person/genome.vcf.gz
-!data/person/genome.vcf.gz.tbi
 
 # ==============================================================================
 # Do not track environment files because spro manages environment/.
@@ -25,8 +17,6 @@ environment/*
 # project folders to avoid them from being ignored.
 # ==============================================================================
 !data/.gitkeep
-!data/grch/.gitkeep
-!data/person/.gitkeep
 !environment/.gitkeep
 !code/.gitkeep
 !output/.gitkeep
@@ -39,8 +29,20 @@ environment/*
 .idea
 
 # ==============================================================================
-# Ignore stuff specified in GitHub's python .gitignore.
+# Additional rules.
 # ==============================================================================
+data/grch/*
+data/person/*
+
+!data/grch
+!data/person
+
+!data/grch/.gitkeep
+
+!data/person/.gitkeep
+!data/person/genome.vcf.gz
+!data/person/genome.vcf.gz.tbi
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
