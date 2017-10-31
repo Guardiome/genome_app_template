@@ -1,13 +1,13 @@
-# See https://git-scm.com/docs/gitignore to learn more about .gitignore file.
+ See https://git-scm.com/docs/gitignore to learn more about .gitignore file.
 
 # ==============================================================================
 # Track only files transferable with git (smaller files that are <100MB); for
 # larger files, which git cannot transfer, specify their download links in the
 # package.json so spro can get them.
 # ==============================================================================
-# Ignore everything within data/, data/person, and data/reference,
+# Ignore everything within data/, data/grch, and data/person,
 data/*
-data/reference/*
+data/grch/*
 data/person/*
 
 # except these files and directories:
@@ -24,8 +24,8 @@ environment/*
 # project folders to avoid them from being ignored.
 # ==============================================================================
 !data/.gitkeep
+!data/grch/.gitkeep
 !data/person/.gitkeep
-!data/reference/.gitkeep
 !environment/.gitkeep
 !code/.gitkeep
 !output/.gitkeep
