@@ -5,7 +5,7 @@
   "version": "1.0.0",
   "keywords": [],
   "downloads": {
-    "reference": ["https://dl.dropboxusercontent.com/s/v43sctnmxljgwce/Homo_sapiens.GRCh38.dna.primary_assembly.fa"]
+    "reference": [ "https://dl.dropboxusercontent.com/s/v43sctnmxljgwce/Homo_sapiens.GRCh38.dna.primary_assembly.fa" ]
   },
   "commands": {
     "run_genome_app": "python code/count_variants.py"
