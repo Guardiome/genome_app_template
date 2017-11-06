@@ -61,7 +61,7 @@ def count_variants():
 
     # Summarize and display output.json
     print(
-        'Counted the number of variants in each chromosome and saved the results to {}:\n'.
+        'Counted the number of variants in each chromosome and saved the results to {}:'.
         format(output_json_file_path))
     pprint(styled_counts)
 
