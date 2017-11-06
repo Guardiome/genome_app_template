@@ -38,6 +38,7 @@ data/person/*
 !data/person
 
 !data/grch/.gitkeep
+!data/grch/*.fai
 
 !data/person/.gitkeep
 !data/person/genome.vcf.gz
