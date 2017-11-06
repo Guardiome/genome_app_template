@@ -4,9 +4,8 @@ from os.path import dirname, join
 from pprint import pprint
 
 # ==============================================================================
-# Define constants
+# Constant Genome App paths
 # ==============================================================================
-
 PROJECT_DIRECTORY_PATH = dirname(dirname(__file__))
 
 OUTPUT_DIRECTORY_PATH = join(PROJECT_DIRECTORY_PATH, 'output')
@@ -62,11 +61,9 @@ def count_variants():
 
     # Summarize and display output.json
     print(
-        'Counted the number of variants in each chromosome and saved the results to {}:'.
+        'Counted the number of variants in each chromosome and saved the results to {}:\n'.
         format(output_json_file_path))
-    print('=' * 80)
     pprint(styled_counts)
-    print('=' * 80)
 
 
 count_variants()
