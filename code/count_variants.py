@@ -1,12 +1,12 @@
 from gzip import open as gzip_open
 from json import dump
-from os.path import dirname, join
+from os.path import abspath, dirname, join
 from pprint import pprint
 
 # ==============================================================================
 # Constant Genome App paths
 # ==============================================================================
-PROJECT_DIRECTORY_PATH = dirname(dirname(__file__))
+PROJECT_DIRECTORY_PATH = dirname(dirname(abspath(__file__)))
 
 OUTPUT_DIRECTORY_PATH = join(PROJECT_DIRECTORY_PATH, 'output')
 
