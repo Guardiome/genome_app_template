@@ -4,9 +4,7 @@
   "git_url": "",
   "version": "1.0.0",
   "keywords": [],
-  "downloads": {
-    "grch": [ "ftp://ftp.ensembl.org/pub/release-90/fasta/homo_sapiens/dna/Homo_sapiens.GRCh38.dna.primary_assembly.fa.gz" ]
-  },
+  "downloads": {},
   "commands": {
     "run_genome_app": "python code/count_variants.py"
   },
