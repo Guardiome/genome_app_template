@@ -21,7 +21,6 @@ def count_variants():
         None
     """
 
-    # Count variants per chromosome
     with gzip_open(
             join(PROJECT_DIRECTORY_PATH, 'data', 'person',
                  'genome.vcf.gz')) as file_:
