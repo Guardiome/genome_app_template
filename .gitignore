@@ -32,14 +32,12 @@ environment/*
 # Additional rules.
 # ==============================================================================
 data/person/*
-
-!data/person
-
 !data/person/.gitkeep
 !data/person/genome.vcf.gz
 !data/person/genome.vcf.gz.tbi
 
 output/*
+!output/.gitkeep
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
