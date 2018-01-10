@@ -6,7 +6,7 @@
   "keywords": [],
   "downloads": {},
   "commands": {
-    "run_genome_app": "python code/count_variants.py"
+    "app": "python code/count_variants.py"
   },
   "environment_history": []
 }
