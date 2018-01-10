@@ -2,19 +2,15 @@ from gzip import open as gzip_open
 from json import dump
 from os.path import abspath, dirname, join
 
-# ==============================================================================
-# Constant Genome App paths
-# ==============================================================================
 PROJECT_DIRECTORY_PATH = dirname(dirname(abspath(__file__)))
 
 OUTPUT_DIRECTORY_PATH = join(PROJECT_DIRECTORY_PATH, 'output')
 
-# ==============================================================================
-
 
 def count_variants():
     """
-    Count variants per chromosome and save the result in ../output/output.json.
+    Counted the number of variants in each chromosome and saved the results to
+    ../output/output.json.
     Arguments:
         None
     Returns:
@@ -25,41 +21,41 @@ def count_variants():
             join(PROJECT_DIRECTORY_PATH, 'data', 'person',
                  'genome.vcf.gz')) as file_:
 
-        counts = {}
+        chromosome_n_variant = {}
+
         current_chromosome = None
 
-        # Count variants
         for line in file_:
 
             line = line.decode()
 
-            if line.startswith('#'):
-                continue
+            if not line.startswith('#'):
 
-            chromosome = line.split('\t')[0]
+                chromosome = line.split('\t')[0]
 
-            if current_chromosome is None or current_chromosome != chromosome:
+                if current_chromosome is None or current_chromosome != chromosome:
 
-                current_chromosome = chromosome
-                counts[current_chromosome] = 0
+                    current_chromosome = chromosome
+                    chromosome_n_variant[current_chromosome] = 0
 
-            else:
-                counts[current_chromosome] += 1
+                else:
+                    chromosome_n_variant[current_chromosome] += 1
 
-    # Style results
-    styled_counts = {}
-    for c, n in counts.items():
-        styled_counts['Chromosome {}'.format(c)] = '{} variants'.format(n)
+    styled_chromosome_n_variant = {}
 
-    # Save results to ../output/output.json
+    for chromosome, n_variant in chromosome_n_variant.items():
+
+        styled_chromosome_n_variant['Chromosome {}'.format(
+            chromosome)] = '{} variants'.format(n_variant)
+
     output_json_file_path = join(OUTPUT_DIRECTORY_PATH, 'output.json')
 
     with open(output_json_file_path, 'w') as file_:
-        dump(styled_counts, file_, indent=2, sort_keys=True)
+        dump(styled_chromosome_n_variant, file_, indent=2, sort_keys=True)
 
     print(
-        'Counted the number of variants in each chromosome and saved the results to {}.'
-    )
+        'Counted the number of variants in each chromosome and saved the results to {}.'.
+        format(output_json_file_path))
 
 
 count_variants()
