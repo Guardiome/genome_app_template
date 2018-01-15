@@ -9,12 +9,10 @@ OUTPUT_DIRECTORY_PATH = join(PROJECT_DIRECTORY_PATH, 'output')
 
 def count_variants():
     """
-    Counted the number of variants in each chromosome and saved the results to
+    Counted the number of variants in each chromosome and save the results to
     ../output/output.json.
     Arguments:
-        None
     Returns:
-        None
     """
 
     with gzip_open(
