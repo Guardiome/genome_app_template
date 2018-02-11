@@ -1,8 +1,8 @@
-# Genome App Title
+# Omics App Title
 
-Add a description for this Genome App here.
+Add a description for this Omics App here.
 
-[Genome App](https://genomeapps.io) powered by [Guardiome](https://guardiome.com)
+[Omics App](https://omicsapp.com) powered by [Guardiome](https://guardiome.com)
 
 <div>
   <img src="media/guardiome_logo.png" width="150" height="150">
