@@ -17,13 +17,13 @@ def count_variants():
 
     with gzip_open(
             join(PROJECT_DIRECTORY_PATH, 'data', 'person',
-                 'genome.vcf.gz')) as file_:
+                 'genome.vcf.gz')) as vcf_gz_file:
 
         chromosome_n_variant = {}
 
         current_chromosome = None
 
-        for line in file_:
+        for line in vcf_gz_file:
 
             line = line.decode()
 
@@ -48,8 +48,8 @@ def count_variants():
 
     output_json_file_path = join(OUTPUT_DIRECTORY_PATH, 'output.json')
 
-    with open(output_json_file_path, 'w') as file_:
-        dump(styled_chromosome_n_variant, file_, indent=2, sort_keys=True)
+    with open(output_json_file_path, 'w') as json_file:
+        dump(styled_chromosome_n_variant, json_file, indent=2, sort_keys=True)
 
     print(
         'Counted the number of variants in each chromosome and saved the results to {}.'.
