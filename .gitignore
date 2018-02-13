@@ -36,8 +36,6 @@ data/person/*
 !data/person/genome.vcf.gz
 !data/person/genome.vcf.gz.tbi
 
-!data/input.g2p
-
 output/*
 !output/.gitkeep
 
