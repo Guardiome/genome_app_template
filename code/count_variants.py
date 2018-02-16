@@ -52,7 +52,7 @@ def count_variants():
         dump(styled_chromosome_n_variant, json_file, indent=2, sort_keys=True)
 
     print(
-        'Counted the number of variants in each chromosome and saved the results to {}.'.
+        'This Omics App counted the number of variants in each chromosome and outputed {}.'.
         format(output_json_file_path))
 
 
