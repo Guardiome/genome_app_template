@@ -1,12 +1,12 @@
 {
-	"name": "",
-	"description": "",
-	"git_url": "",
-	"version": "1.0.0",
-	"keywords": [],
-	"downloads": {},
-	"commands": {
-		"app": "python code/run_omics_app.py"
-	},
-	"environment_history": []
+  "name": "",
+  "description": "",
+  "git_url": "",
+  "version": "1.0.0",
+  "keywords": [],
+  "downloads": {},
+  "commands": {
+    "app": "python code/run_omics_app.py"
+  },
+  "environment_history": []
 }
