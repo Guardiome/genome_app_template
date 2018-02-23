@@ -1,6 +1,6 @@
-# Omics App Title
+# Title
 
-Add a description for this Omics App here.
+Add a description here.
 
 [Omics App](https://omicsapps.com) powered by [Guardiome](https://guardiome.com)
 
