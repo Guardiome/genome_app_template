@@ -1,6 +1,6 @@
 # Title
 
-Add a description here.
+Description.
 
 [Omics App](https://omicsapps.com) powered by [Guardiome](https://guardiome.com)
 
