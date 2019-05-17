@@ -2,8 +2,6 @@
 
 Description.
 
-[Omics App](https://omicsapps.com) powered by [Guardiome](https://guardiome.com)
+Omics App powered by [Guardiome](https://guardiome.com/)
 
-<div>
-  <img src="media/guardiome_logo.png" width="150" height="150">
-</div>
+<img src="media/guardiome_logo.png" width="150" height="150">
