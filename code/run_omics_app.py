@@ -1,6 +1,7 @@
 from gzip import open as gzip_open
-from json import dump
 from os.path import abspath, dirname, join
+
+from kraft import write_yaml
 
 PROJECT_DIRECTORY_PATH = dirname(dirname(abspath(__file__)))
 
@@ -14,7 +15,7 @@ OUTPUT_DIRECTORY_PATH = join(PROJECT_DIRECTORY_PATH, "output")
 def count_variants():
     """
     Counted the number of variants in each chromosome and save the results to
-        ../output/output.json.
+        ../output/output.yaml.
     Arguments:
     Returns:
     """
@@ -31,7 +32,7 @@ def count_variants():
 
             if not line.startswith("#"):
 
-                chromosome = line.split("\t")[0]
+                chromosome = line.split(sep="\t")[0]
 
                 if current_chromosome is None or current_chromosome != chromosome:
 
@@ -49,15 +50,12 @@ def count_variants():
             "Chromosome {}".format(chromosome)
         ] = "{} variants".format(n_variant)
 
-    output_json_file_path = join(OUTPUT_DIRECTORY_PATH, "output.json")
+    output_yaml_file_path = join(OUTPUT_DIRECTORY_PATH, "output.yaml")
 
-    with open(output_json_file_path, "w") as json_file:
-        dump(styled_chromosome_n_variant, json_file, indent=2, sort_keys=True)
+    write_yaml(styled_chromosome_n_variant, output_yaml_file_path)
 
     print(
-        "This Omics App counted the number of variants in each chromosome and output {}.".format(
-            output_json_file_path
-        )
+        f"This Omics App counted the number of variants in each chromosome and output {output_yaml_file_path}."
     )
 
 
