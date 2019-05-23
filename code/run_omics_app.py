@@ -47,8 +47,8 @@ def count_variants():
     for chromosome, n_variant in chromosome_n_variant.items():
 
         styled_chromosome_n_variant[
-            "Chromosome {}".format(chromosome)
-        ] = "{} variants".format(n_variant)
+            f"Chromosome {chromosome}"
+        ] = f"{n_variant} variants"
 
     output_yaml_file_path = join(OUTPUT_DIRECTORY_PATH, "output.yaml")
 
