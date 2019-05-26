@@ -14,19 +14,19 @@ OUTPUT_DIRECTORY_PATH = join(PROJECT_DIRECTORY_PATH, "output")
 
 def count_variants():
     """
-    Counted the number of variants in each chromosome and save the results to
+    Count the number of variants in each chromosome and save the results to
         ../output/output.yaml.
     Arguments:
     Returns:
     """
 
-    with gzip_open(PERSON_GENOME_VCF_GZ_FILE_PATH) as vcf_gz_file:
+    with gzip_open(PERSON_GENOME_VCF_GZ_FILE_PATH) as io:
 
         chromosome_n_variant = {}
 
         current_chromosome = None
 
-        for line in vcf_gz_file:
+        for line in io:
 
             line = line.decode()
 
