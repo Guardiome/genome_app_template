@@ -3,6 +3,11 @@
   "git_url": "",
   "version": "0.0.1",
   "keyword": [],
+  "environment": [
+    "pip install kraft",
+    "conda install --prefix PROJECT_ENVIRONMENT_DIRECTORY_PATH --channel bioconda --yes htslib",
+    "conda install --prefix PROJECT_ENVIRONMENT_DIRECTORY_PATH --channel bioconda --yes samtools"
+  ],
   "download": {
     "input": [
       "https://s3-us-west-1.amazonaws.com/guardiome.omics-data/Homo_sapiens.GRCh38.dna.primary_assembly.fa.bgz",
