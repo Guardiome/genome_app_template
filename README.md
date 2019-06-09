@@ -1,4 +1,6 @@
-# Title
+# Omics App Template
+
+Omics App :snowflake: template :kimono:
 
 An Omics App is a [shareable project](https://github.com/KwatME/spro) that is integrable with [Omics AI](https://guardiome.com).
 
