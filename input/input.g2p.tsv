@@ -1,0 +1,11 @@
+NAME	REGION	GENOTYPE	PHENOTYPE	SOURCE
+rs1815739	11:66560624-66560624	C|C	Sprinter, better performing muscles, true.	Source.
+rs1815739	11:66560624-66560624	C|T	Sprinter, mix of muscle types.	Source.
+rs1815739	11:66560624-66560624	T|T	Endurance athlete, impaired muscle performance.	Roth, Stephen M., et al. "The ACTN3 R577X nonsense allele is under-represented in elite-level strength athletes." European journal of human genetics: EJHG 16.3 (2008): 391.
+rs1815739;rs200001186	11:66560624-66560624;1:261303-261303	C|C;T|A	Two rsids, true.	Source.
+rs1815739;rs200001186	11:66560624-66560624;1:261303-261303	C|C;T|T	Two rsids, false.	Source.
+WASH7P	1:14362-29570	MODIFIER	Wash7p alone description, true.	Source.
+PRAMEF25	1:13068677-13078038	MODERATE	Pramef25 alone description, true.	Source.
+AGRN	1:1020101-1056119	HIGH	Agrn alone description, false.	Source.
+WASH7P;AGRN	1:14362-29570;1:1020101-1056119	MODIFIER;HIGH	wash7p and agrn description, true.	Source.
+WASH7P;AGRN	1:14362-29570;1:1020101-1056119	HIGH;HIGH	wash7p and agrn description, false.	Source.
