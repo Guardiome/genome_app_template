@@ -6,7 +6,7 @@
 
 <br>
 
-<p align="center"><a href"#omics-ai-api">Omics AI API</a></p>
+<p align="center"><a href="#omics-ai-api">Omics AI API</a></p>
 <p align="center">[Get Started](#get-started)</p>
 <p align="center">[Edit Your Omics App](#edit-your-omics-app)</p>
 <p align="center">[Make a README](#make-a-readme)</p>
