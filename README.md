@@ -13,7 +13,7 @@
 
 <h4 align="center"><a href="#edit-your-omics-app">Edit Your Omics App</a></h4>
 
-<h4 align="center"><a href="#make-a-readme">Make a README</a></h4>
+<h4 align="center"><a href="#make_a_readme">Make a README</a></h4>
 
 <h4 align="center"><a href="#publish-to-omics-ai">Publish to Omics AI</a></h4>
 
@@ -111,9 +111,10 @@ spro run run_omics_app
 
 <br>
 
+<p id="make_a_readme"></p>
 ## Make a README
 
-Link media from `stuff/` to README if you want. [Here](https://github.com/Kazyra/muscle_type) and [here](https://github.com/yaseenkady/alcohol-skin-flush) are some Omics Apps with cool READMEs.
+Link things from `stuff/` to README if you want. [Here](https://github.com/kwatme/muscle_type) and [here](https://github.com/yaseenkady/alcohol-skin-flush) are some Omics Apps with cool READMEs.
 
 
 <br>
