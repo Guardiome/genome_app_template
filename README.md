@@ -90,7 +90,6 @@ To use `code/match_g2p.py`, you'll customize `input/input.g2p.tsv`.
 | NAME                  | REGION                               | GENOTYPE      | PHENOTYPE | SOURCE  |
 | :-------------------- | :----------------------------------- | :------------ | :-------- | :------ |
 | WASH7P;TPRXL          | 1:12362-29570;3:14064384-14064385    | MODIFIER;HIGH | True.     | Source. |
-| rs1815739;rs200001186 | 11:66560624-66560624;1:261303-261303 | C|C;T|A       | True.     | Source. |
 
 
 - `match.g2p.py` searches for two types of `GENOTYPE`s in `input.g2p.tsv`: [SNPeff putative impact](http://snpeff.sourceforge.net/SnpEff_manual.html) (MODIFIER, MODERATE, or HIGH) and actual genotype (A/T, for example). Checkout the template `input.g2p.tsv`, which  contains all possible uses of `input.g2p.tsv` rows.
