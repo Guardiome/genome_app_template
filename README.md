@@ -1,14 +1,16 @@
 <img src="stuff/omics_apps_logo.png" align="center" width="200">
 
-<h1 align="center>Omics App Template</h1>
+<h1 align="center">Omics App Template</h1>
 
-An Omics App is a [shareable project](https://github.com/KwatME/spro) that analyzes omics data and is integrable with [Omics AI](https://guardiome.com).
+<p align="center">An Omics App is a [shareable project](https://github.com/KwatME/spro) that analyzes omics data and is integrable with [Omics AI](https://guardiome.com).</p>
 
-- [Omics AI API](#omics-ai-api)
-- [Get Started](#get-started)
-- [Edit Your Omics App](#edit-your-omics-app)
-- [Make a README](#make-a-readme)
-- [Publish to Omics AI](#publish-to-omics-ai)
+<br>
+
+<p align="center">[Omics AI API](#omics-ai-api)</p>
+<p align="center">[Get Started](#get-started)</p>
+<p align="center">[Edit Your Omics App](#edit-your-omics-app)</p>
+<p align="center">[Make a README](#make-a-readme)</p>
+<p align="center">[Publish to Omics AI](#publish-to-omics-ai)</p>
 
 <br>
 
