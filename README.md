@@ -65,8 +65,6 @@ Choose to:
 
 2) or [write your own code.](#write-your-own-code)
 
-<br>
-
 ### Use match_g2p.py
 
 To use `match_g2p.py`, edit `input.g2p.tsv`.
@@ -75,8 +73,6 @@ To use `match_g2p.py`, edit `input.g2p.tsv`.
   * [This variant is on the plus strand](https://www.snpedia.com/index.php/Rs53576).
   * [This variant is on the minus strand](https://www.snpedia.com/index.php/Rs1051730), so you would use its complement, `G|G` (the genotype on the plus strand).
 * Get the genomic locations for variants from [dbSNP](https://www.ncbi.nlm.nih.gov/projects/SNP/) and the genomic locations for genes from [NCBI gene search](https://www.ncbi.nlm.nih.gov/gene/672)
-
-<br>
 
 ### Write your own code
 
@@ -90,8 +86,6 @@ In `project.json`
 
     1) Dont change data file path keys.
     2) Set `command/run_omics_app/` to your entry code file.
-
-<br>
 
 ### Run Your Omics App
 
