@@ -77,15 +77,15 @@ To use `code/match_g2p.py`, you'll customize `input/input.g2p.tsv`.
 
 #### `input.g2p.tsv`
 
-`input.g2p.tsv` has 5 required columns: `NAME`, `REGION`, `GENOTYPE`, `PHENOTYPE`, and `SOURCE`.
+- `input.g2p.tsv` has 5 required columns: `NAME`, `REGION`, `GENOTYPE`, `PHENOTYPE`, and `SOURCE`.
 
-For each row in `input.g2p.tsv`, if `match.g2p.py` finds the `GENOTYPE` in the `REGION` of the given vcf, the row is added to `output.g2p.tsv`.
+- For each row in `input.g2p.tsv`, if `match.g2p.py` finds the `GENOTYPE` in the `REGION` of the given vcf, the row is added to `output.g2p.tsv`.
 
 
-If there are multiple regions and genotypes like here:
+- If there are multiple regions and genotypes like here:
 
 ```bash
-NAME          REGION            GENOTYPE        PHENOTYPE             SOURCE
+NAME            REGION                            GENOTYPE        PHENOTYPE             SOURCE
 WASH7P;TPRXL	1:12362-29570;3:14064384-14064385	MODIFIER;HIGH	True.	Source.
 
 ```
