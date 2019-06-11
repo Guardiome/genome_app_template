@@ -59,6 +59,8 @@ This is essential for understanding Omics Apps.
 
 ## Edit Your Omics App
 
+<br>
+
 Choose to:
 
 1) [use the template code](#use-the-template-code),
@@ -86,7 +88,7 @@ To use `code/match_g2p.py`, you'll customize `input/input.g2p.tsv`.
 
 ```bash
 NAME            REGION                                  GENOTYPE        PHENOTYPE  SOURCE
-WASH7P;TPRXL	1:12362-29570;3:14064384-14064385	MODIFIER;HIGH	True.	Source.
+WASH7P;TPRXL	1:12362-29570;3:14064384-14064385	MODIFIER;HIGH	True.	 Source.
 
 ```
 
@@ -172,7 +174,9 @@ spro share https://github.com/username/omics_app_repository_name
 3) Add your Omics App [here](https://github.com/Guardiome/omics_apps_for_omics_ai/blob/master/omics_apps_for_omics_ai.yaml) and make a pull request. If merged, your Omics App will be available on Omics AI.
 
 <br>
+<br>
+<br>
 
-Email questions to team@guardiome.com.
+Feel free to [create an issue](https://github.com/Guardiome/omics_app_template/issues/new).
 
 <img src="stuff/guardiome_logo.png" width="150" height="150">
