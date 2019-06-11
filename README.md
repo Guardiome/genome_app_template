@@ -9,6 +9,7 @@ An Omics App is a [shareable project](https://github.com/KwatME/spro) that analy
 - [Publish to Omics AI](#publish-to-omics-ai)
 
 <br>
+
 ## Omics AI API
 
 Omics AI runs an Omics App by `spro run run_omics_app`.
@@ -22,6 +23,7 @@ At run time, Omics AI adds these key-value pairs to `project.json`.
 ```
 
 <br>
+
 ## Get Started
 
 #### Install Dependencies
@@ -52,6 +54,7 @@ spro run
 #### [Learn spro](https://github.com/kwatme/spro)
 
 <br>
+
 ## Edit Your Omics App
 
 Either:
@@ -61,6 +64,7 @@ Either:
 2) or [write your own code.](#write-your-own-code)
 
 <br>
+
 #### Use match_g2p.py
 
 To use `match_g2p.py`, edit `input.g2p.tsv`.
@@ -71,6 +75,7 @@ To use `match_g2p.py`, edit `input.g2p.tsv`.
 * Get the genomic locations for variants from [dbSNP](https://www.ncbi.nlm.nih.gov/projects/SNP/) and the genomic locations for genes from [NCBI gene search](https://www.ncbi.nlm.nih.gov/gene/672)
 
 <br>
+
 #### Write your own code
 
 Outputs allowed (Omics AI will show any of these):
@@ -85,6 +90,7 @@ In `project.json`
     2) Set `command/run_omics_app/` to your entry code file.
 
 <br>
+
 #### Run Your Omics App
 
 ```
@@ -94,12 +100,14 @@ spro run run_omics_app
 ```
 
 <br>
+
 ## Make a README
 
 Link media from `stuff/` to README if you want. [Here](https://github.com/Kazyra/muscle_type) and [here](https://github.com/yaseenkady/alcohol-skin-flush) are some Omics Apps with cool READMEs.
 
 
 <br>
+
 ## Publish to Omics AI
 
 1) [Add to Github](https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/).
