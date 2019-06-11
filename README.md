@@ -12,7 +12,7 @@
 
 <h3 align="center"><a href="#edit_your_omics_app">Edit Your Omics App</a></h3>
 
-<h3 align="center"><a href="#omics_ai_api">Omics AI API</a></h3>
+<h3 align="center"><a href="#learn_omics_ai_api">Learn Omics AI API</a></h3>
 
 <h3 align="center"><a href="#make_a_readme">Make a README</a></h3>
 
@@ -131,9 +131,9 @@ spro run run_omics_app
 <br>
 <br>
 <br>
-<p id="omics_ai_api"></p>
+<p id="learn_omics_ai_api"></p>
 
-## Omics AI API
+## Learn Omics AI API
 
 Omics AI runs an Omics App by `spro run run_omics_app`.
 
