@@ -26,7 +26,7 @@ At run time, Omics AI adds these key-value pairs to `project.json`.
 
 ## Get Started
 
-#### Install Dependencies
+#### 1) Install Dependencies
 
 [Download git](https://git-scm.com/downloads)
 
@@ -34,13 +34,13 @@ At run time, Omics AI adds these key-value pairs to `project.json`.
 pip install spro
 ```
 
-#### Make
+#### 2) Create an Omics App
 
 ```bash
 spro create -g https://github.com/guardiome/omics_app_template my_omics_app
 ```
 
-#### Run
+#### 3) Run it
 
 (to see that it works)
 
@@ -51,21 +51,21 @@ spro build
 spro run
 ```
 
-#### [Learn spro](https://github.com/kwatme/spro)
+#### 4) [Learn spro](https://github.com/kwatme/spro)
 
 <br>
 
 ## Edit Your Omics App
 
-Either:
+Choose to:
 
-1) [use match_g2p.py](#use-match-g2p.py) (the template code),
+1) [use match_g2p.py](#use-match_g2p.py) (the template code),
 
 2) or [write your own code.](#write-your-own-code)
 
 <br>
 
-#### Use match_g2p.py
+### Use match_g2p.py
 
 To use `match_g2p.py`, edit `input.g2p.tsv`.
 
@@ -76,7 +76,7 @@ To use `match_g2p.py`, edit `input.g2p.tsv`.
 
 <br>
 
-#### Write your own code
+### Write your own code
 
 Outputs allowed (Omics AI will show any of these):
 
@@ -122,9 +122,7 @@ spro share https://github.com/username/omics_app_repository_name
 3) Add your Omics App [here](https://github.com/Guardiome/omics_apps_for_omics_ai/blob/master/omics_apps_for_omics_ai.yaml) and make a pull request. If merged, your Omics App will be available on Omics AI.
 
 <br>
-Email questions to team@guardiome.com.
 
-<br>
-Omics App powered by [Guardiome](https://guardiome.com)
+Email questions to team@guardiome.com.
 
 <img src="stuff/guardiome_logo.png" width="150" height="150">
