@@ -80,7 +80,7 @@ To use `code/match_g2p.py`, edit `input/input.g2p.tsv`.
 
 ### Write your own code
 
-Outputs allowed (Omics AI will show any of these):
+Outputs allowed by Omics AI:
 
 - `output/output.html`
 - `output/output.json` (1 level only)
