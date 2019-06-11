@@ -97,9 +97,9 @@ To use `code/match_g2p.py`, you'll customize `input/input.g2p.tsv`.
 <br>
 
 #### Tips
-* Use the plus strand for variants.
-  * [This variant is on the minus strand](https://www.snpedia.com/index.php/Rs1051730), so you would use its complement, `G|G` (the genotype on the plus strand).
 * `REGION`s must be for GRCH38.
+* Use the plus strand for variants.
+  * [This variant is on the minus strand](https://www.snpedia.com/index.php/Rs1051730), so you would use its complement, `G|G` (the genotype on the plus strand) to look for normal smoker behavior.
 
 <br>
 
