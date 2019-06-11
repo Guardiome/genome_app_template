@@ -99,7 +99,7 @@ To use `code/match_g2p.py`, you'll customize `input/input.g2p.tsv`.
 #### Tips
 * `REGION`s must be for GRCH38.
 * Use the plus strand for variants.
-  * [This variant is on the minus strand](https://www.snpedia.com/index.php/Rs1051730), so you would use its complement, `G|G` (the genotype on the plus strand) to look for normal smoker behavior.
+  * [This variant is on the minus strand](https://www.snpedia.com/index.php/Rs1051730), so you would use its complement, `G|G` (the plus strand genotype) to look for normal smoker behavior.
 
 <br>
 
@@ -107,7 +107,7 @@ To use `code/match_g2p.py`, you'll customize `input/input.g2p.tsv`.
 
 Add software your code depends on with `spro install`.
 
-Omics AI excepts your code to produce one of the following:
+Omics AI expects your code to produce one of the following:
 
 - `output/output.html`
 - `output/output.json` (1 level only)

@@ -18,6 +18,8 @@ output/*
 # Default .gitignore rules for an Omics App
 
 !input/input.g2p.tsv
+!input/example.vcf.gz
+!input/example.vcf.gz.tbi
 # ==============================================================================
 
 # ==============================================================================
