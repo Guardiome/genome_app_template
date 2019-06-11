@@ -19,23 +19,6 @@
 
 <br>
 <br>
-
-<p id="omics_ai_api"></p>
-
-## Omics AI API
-
-Omics AI runs an Omics App by `spro run run_omics_app`.
-
-At run time, Omics AI adds these key-value pairs to `project.json`.
-
-```json
-{
-  "vcf_gz_file_path": "/path/to/sample.vcf.gz"
-}
-```
-
-<br>
-
 <p id="get_started"></p>
 
 ## Get Started
@@ -68,7 +51,6 @@ spro run
 #### 4) [Learn spro](https://github.com/kwatme/spro)
 
 <br>
-
 <p id="edit_your_omics_app"></p>
 
 ## Edit Your Omics App
@@ -116,7 +98,21 @@ spro run run_omics_app
 ```
 
 <br>
+<p id="omics_ai_api"></p>
 
+## Omics AI API
+
+Omics AI runs an Omics App by `spro run run_omics_app`.
+
+At run time, Omics AI adds these key-value pairs to `project.json`.
+
+```json
+{
+  "vcf_gz_file_path": "/path/to/sample.vcf.gz"
+}
+```
+
+<br>
 <p id="make_a_readme"></p>
 
 ## Make a README
@@ -125,7 +121,6 @@ Link things from `stuff/` to README if you want. [Here](https://github.com/kwatm
 
 
 <br>
-
 <p id="publish_to_omics_ai"></p>
 
 ## Publish to Omics AI
