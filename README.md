@@ -7,11 +7,12 @@
 <br>
 <br>
 
-<h4 align="center"><a href="#omics_ai_api">Omics AI API</a></h4>
 
 <h4 align="center"><a href="#get_started">Get Started</a></h4>
 
 <h4 align="center"><a href="#edit_your_omics_app">Edit Your Omics App</a></h4>
+
+<h4 align="center"><a href="#omics_ai_api">Omics AI API</a></h4>
 
 <h4 align="center"><a href="#make_a_readme">Make a README</a></h4>
 
