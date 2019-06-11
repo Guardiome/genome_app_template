@@ -54,6 +54,7 @@ spro run
 #### 4) [Learn spro](https://github.com/kwatme/spro)
 
 <br>
+<br>
 <p id="edit_your_omics_app"></p>
 
 ## Edit Your Omics App
@@ -101,6 +102,7 @@ spro run run_omics_app
 ```
 
 <br>
+<br>
 <p id="omics_ai_api"></p>
 
 ## Omics AI API
@@ -123,6 +125,7 @@ At run time, Omics AI adds these key-value pairs to `project.json`.
 Link things from `stuff/` to README if you want. [Here](https://github.com/kwatme/muscle_type) and [here](https://github.com/yaseenkady/alcohol-skin-flush) are some Omics Apps with cool READMEs.
 
 
+<br>
 <br>
 <p id="publish_to_omics_ai"></p>
 
