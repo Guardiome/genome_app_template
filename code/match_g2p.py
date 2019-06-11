@@ -74,7 +74,7 @@ for g2p_row_index, g2p_row in input_g2p.iterrows():
 
             row_element_match.append(
                 any(
-                    genotype in get_vcf_info_ann(variant[7], "effect")
+                    genotype in get_vcf_info_ann(variant[7], "impact")
                     for variant in variants
                 )
             )

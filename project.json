@@ -6,7 +6,9 @@
   "environment": [
     "pip install kraft",
     "conda install --prefix PROJECT_ENVIRONMENT_DIRECTORY_PATH --channel bioconda --yes htslib",
-    "conda install --prefix PROJECT_ENVIRONMENT_DIRECTORY_PATH --channel bioconda --yes samtools"
+    "conda install --prefix PROJECT_ENVIRONMENT_DIRECTORY_PATH --channel bioconda --yes samtools",
+    "conda install --prefix PROJECT_ENVIRONMENT_DIRECTORY_PATH --channel bioconda --yes samtools=1.9=h8ee4bcc_1",
+    "conda install --prefix PROJECT_ENVIRONMENT_DIRECTORY_PATH --channel conda-forge --yes openssl=1.0.2"
   ],
   "download": {
     "input": [
@@ -18,5 +20,5 @@
   "command": {
     "run_omics_app": "python code/match_g2p.py"
   },
-  "vcf_gz_file_path": "~/sample/example.vcf.gz"
+  "vcf_gz_file_path": "input/example.vcf.gz"
 }
