@@ -1,4 +1,6 @@
-# Omics App Template
+<img src="stuff/omics_apps_logo.png" align="center" width="200">
+
+<h1 align="center>Omics App Template</h1>
 
 An Omics App is a [shareable project](https://github.com/KwatME/spro) that analyzes omics data and is integrable with [Omics AI](https://guardiome.com).
 
