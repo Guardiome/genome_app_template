@@ -7,18 +7,20 @@
 <br>
 <br>
 
-<h4 align="center"><a href="#omics-ai-api">Omics AI API</a></h4>
+<h4 align="center"><a href="#omics_ai_api">Omics AI API</a></h4>
 
-<h4 align="center"><a href="#get-started">Get Started</a></h4>
+<h4 align="center"><a href="#get_started">Get Started</a></h4>
 
-<h4 align="center"><a href="#edit-your-omics-app">Edit Your Omics App</a></h4>
+<h4 align="center"><a href="#edit_your_omics_app">Edit Your Omics App</a></h4>
 
 <h4 align="center"><a href="#make_a_readme">Make a README</a></h4>
 
-<h4 align="center"><a href="#publish-to-omics-ai">Publish to Omics AI</a></h4>
+<h4 align="center"><a href="#publish_to_omics_ai">Publish to Omics AI</a></h4>
 
 <br>
 <br>
+
+<p id="omics_ai_api"></p>
 
 ## Omics AI API
 
@@ -33,6 +35,8 @@ At run time, Omics AI adds these key-value pairs to `project.json`.
 ```
 
 <br>
+
+<p id="get_started"></p>
 
 ## Get Started
 
@@ -64,6 +68,8 @@ spro run
 #### 4) [Learn spro](https://github.com/kwatme/spro)
 
 <br>
+
+<p id="edit_your_omics_app"></p>
 
 ## Edit Your Omics App
 
@@ -119,6 +125,8 @@ Link things from `stuff/` to README if you want. [Here](https://github.com/kwatm
 
 
 <br>
+
+<p id="publish_to_omics_ai"></p>
 
 ## Publish to Omics AI
 
