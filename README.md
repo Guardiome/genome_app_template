@@ -1,6 +1,14 @@
 # Omics App Template
 
-An Omics App is a [shareable project](https://github.com/KwatME/spro) that is integrable with [Omics AI](https://guardiome.com).
+An Omics App is a [shareable project](https://github.com/KwatME/spro) that analyzes omics data and is integrable with [Omics AI](https://guardiome.com).
+
+- [Omics AI API](#omics-ai-api)
+- [Get Started](#get-started)
+- [Edit Your Omics App](#edit-your-omics-app)
+- [Make a README](#make-a-readme)
+- [Publish to Omics AI](#publish-to-omics-ai)
+
+## Omics AI API
 
 Omics AI runs an Omics App by `spro run run_omics_app`.
 
@@ -13,9 +21,9 @@ At run time, Omics AI adds these key-value pairs to `project.json`.
 ```
 
 
-## Make an Omics App
+## Get Started
 
-### Install Dependencies
+#### Install Dependencies
 
 [Download git](https://git-scm.com/downloads)
 
@@ -23,13 +31,13 @@ At run time, Omics AI adds these key-value pairs to `project.json`.
 pip install spro
 ```
 
-### Make
+#### Make
 
 ```bash
 spro create -g https://github.com/guardiome/omics_app_template my_omics_app
 ```
 
-### Run
+#### Run
 
 (to see that it works)
 
@@ -40,11 +48,11 @@ spro build
 spro run
 ```
 
-### [Learn spro](https://github.com/kwatme/spro)
+#### [Learn spro](https://github.com/kwatme/spro)
 
 ----------------------------------------------------------------------
 
-### Edit
+### Edit Your Omics App
 
 Either:
 
@@ -87,19 +95,18 @@ spro run run_omics_app
 
 ---------------------------------------------------------------------------
 
-### Make README
+## Make a README
 
 Link media from `stuff/` to README if you want. [Here](https://github.com/Kazyra/muscle_type) and [here](https://github.com/yaseenkady/alcohol-skin-flush) are some Omics Apps with cool READMEs.
 
 
 ----------------------------------------------------------------------------------------------
 
-### Share to Omics AI
+## Publish to Omics AI
 
 #### [Add to Github](https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/)
 
-#### Share
-
+`Spro share` will push changes to Github and create a release with the `version` you set in `project.json`.
 ```
 cd omics_app_directory
 spro share https://github.com/username/omics_app_repository_name
