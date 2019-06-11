@@ -5,13 +5,19 @@
 <p align="center">An Omics App is a <a href="https://github.com/KwatME/spro">shareable project</a> that analyzes omics data and is integrable with <a href="https://guardiome.com">Omics AI</a>.</p>
 
 <br>
+<br>
 
 <h4 align="center"><a href="#omics-ai-api">Omics AI API</a></h4>
-<h4 align="center"><a href="#get-started">Get Started</a></h4>
-<p align="center">[Edit Your Omics App](#edit-your-omics-app)</p>
-<p align="center">[Make a README](#make-a-readme)</p>
-<p align="center">[Publish to Omics AI](#publish-to-omics-ai)</p>
 
+<h4 align="center"><a href="#get-started">Get Started</a></h4>
+
+<h4 align="center"><a href="#edit-your-omics-app">Edit Your Omics App</a></h4>
+
+<h4 align="center"><a href="#make-a-readme">Make a README</a></h4>
+
+<h4 align="center"><a href="#publish-to-omics-ai">Publish to Omics AI</a></h4>
+
+<br>
 <br>
 
 ## Omics AI API
