@@ -8,7 +8,6 @@
 
 <br>
 
-
 <h3 align="center"><a href="#get_started">Get Started</a></h3>
 
 <h3 align="center"><a href="#edit_your_omics_app">Edit Your Omics App</a></h3>
@@ -55,6 +54,7 @@ spro run
 
 <br>
 <br>
+<br>
 <p id="edit_your_omics_app"></p>
 
 ## Edit Your Omics App
@@ -65,6 +65,8 @@ Choose to:
 
 2) or [write your own code.](#write-your-own-code)
 
+<br>
+
 ### Use match_g2p.py
 
 To use `match_g2p.py`, edit `input.g2p.tsv`.
@@ -73,6 +75,8 @@ To use `match_g2p.py`, edit `input.g2p.tsv`.
   * [This variant is on the plus strand](https://www.snpedia.com/index.php/Rs53576).
   * [This variant is on the minus strand](https://www.snpedia.com/index.php/Rs1051730), so you would use its complement, `G|G` (the genotype on the plus strand).
 * Get the genomic locations for variants from [dbSNP](https://www.ncbi.nlm.nih.gov/projects/SNP/) and the genomic locations for genes from [NCBI gene search](https://www.ncbi.nlm.nih.gov/gene/672)
+
+<br>
 
 ### Write your own code
 
@@ -87,6 +91,8 @@ In `project.json`
     1) Dont change data file path keys.
     2) Set `command/run_omics_app/` to your entry code file.
 
+<br>
+
 ### Run Your Omics App
 
 ```
@@ -95,6 +101,7 @@ spro enter
 spro run run_omics_app
 ```
 
+<br>
 <br>
 <br>
 <p id="omics_ai_api"></p>
@@ -112,6 +119,8 @@ At run time, Omics AI adds these key-value pairs to `project.json`.
 ```
 
 <br>
+<br>
+<br>
 <p id="make_a_readme"></p>
 
 ## Make a README
@@ -119,6 +128,7 @@ At run time, Omics AI adds these key-value pairs to `project.json`.
 Link things from `stuff/` to README if you want. [Here](https://github.com/kwatme/muscle_type) and [here](https://github.com/yaseenkady/alcohol-skin-flush) are some Omics Apps with cool READMEs.
 
 
+<br>
 <br>
 <br>
 <p id="publish_to_omics_ai"></p>
