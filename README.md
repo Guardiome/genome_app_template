@@ -2,7 +2,7 @@
 
 <h1 align="center">Omics App Template</h1>
 
-<p align="center">An Omics App is a <a href="https://github.com/KwatME/spro" target="_blank">shareable project</a> that analyzes omics data and is integrable with <a href="https://guardiome.com" target="_blank">Omics AI</a>.</p>
+<p align="center">An Omics App is a <a href="https://github.com/KwatME/spro">shareable project</a> that analyzes omics data and is integrable with <a href="https://guardiome.com">Omics AI</a>.</p>
 
 <br>
 
