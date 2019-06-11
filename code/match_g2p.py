@@ -105,9 +105,14 @@ for g2p_row_index, g2p_row in input_g2p.iterrows():
 
                 raise ValueError("There are multiple variants.")
 
+
+            print(f"Sample Genotype: {sample_genotype}")
+
             row_element_match.append(
                 set(sample_genotype) == set(genotype.split(sep="|"))
             )
+
+    print(f"This row is a match: {all(row_element_match)}")
 
     row_match.append(all(row_element_match))
 
