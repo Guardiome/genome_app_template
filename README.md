@@ -1,4 +1,6 @@
-<img src="stuff/omics_apps_logo.png" align="center" width="200">
+<div align="center">
+  <img src="stuff/omics_apps_logo.png" width="200">
+</div>
 
 <h1 align="center">Omics App Template</h1>
 
