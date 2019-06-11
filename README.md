@@ -41,16 +41,16 @@ spro create -g https://github.com/guardiome/omics_app_template my_omics_app
 
 #### 3) Run it
 
-(to see that it works)
-
 ```bash
 cd my_omics_app
 spro enter
 spro build
-spro run
+spro run run_omics_app
 ```
 
 #### 4) [Learn spro](https://github.com/kwatme/spro)
+
+This is essential for understanding Omics Apps.
 
 <br>
 <br>
@@ -69,18 +69,35 @@ Choose to:
 
 ### Use the template code
 
-To use `code/match_g2p.py`, edit `input/input.g2p.tsv`.
+To use `code/match_g2p.py`, you need to edit `input/input.g2p.tsv`.
 
-* Use the plus strand
-  * [This variant is on the plus strand](https://www.snpedia.com/index.php/Rs53576).
+`input.g2p.tsv` is basically a genomic lookup table. `match_g2p.py` checks the given vcf for the items in `input.g2p.tsv` and writes any matches it finds to `output.g2p.tsv`.
+
+
+`.g2p` files have 5 required columns: `NAME`, `REGION`, `GENOTYPE`, `PHENOTYPE`, and `SOURCE`. A `.g2p` row can have variants __or__ genes, but __not both in one row__.
+
+For each row in `input.g2p.tsv`, if `match.g2p.py` finds the `GENOTYPE` in the `REGION` of the given vcf, the row is added to `output.g2p.tsv`. If there are multiple regions and genotypes like here:
+
+```bash
+NAME          REGION            GENOTYPE
+gene1;gene2   region1;region2   genotype1;genotype2
+```
+they all must be true for the row to be added to `ouput.g2p.tsv`
+
+The template `input.g2p.tsv` contains all possible uses of `input.g2p.tsv` rows.
+
+#### Tips
+* Use the plus strand for variants.
   * [This variant is on the minus strand](https://www.snpedia.com/index.php/Rs1051730), so you would use its complement, `G|G` (the genotype on the plus strand).
-* Get the genomic locations for variants from [dbSNP](https://www.ncbi.nlm.nih.gov/projects/SNP/) and the genomic locations for genes from [NCBI gene search](https://www.ncbi.nlm.nih.gov/gene/672)
+* `REGION`s must be for GRCH38.
 
 <br>
 
 ### Write your own code
 
-Outputs allowed by Omics AI:
+Add software your code depends on with `spro install`.
+
+Omics AI excepts your code to produce one of the following:
 
 - `output/output.html`
 - `output/output.json` (1 level only)
