@@ -6,18 +6,20 @@
 
 <br>
 <br>
+<br>
 
 
-<h4 align="center"><a href="#get_started">Get Started</a></h4>
+<h3 align="center"><a href="#get_started">Get Started</a></h3>
 
-<h4 align="center"><a href="#edit_your_omics_app">Edit Your Omics App</a></h4>
+<h3 align="center"><a href="#edit_your_omics_app">Edit Your Omics App</a></h3>
 
-<h4 align="center"><a href="#omics_ai_api">Omics AI API</a></h4>
+<h3 align="center"><a href="#omics_ai_api">Omics AI API</a></h3>
 
-<h4 align="center"><a href="#make_a_readme">Make a README</a></h4>
+<h3 align="center"><a href="#make_a_readme">Make a README</a></h3>
 
-<h4 align="center"><a href="#publish_to_omics_ai">Publish to Omics AI</a></h4>
+<h3 align="center"><a href="#publish_to_omics_ai">Publish to Omics AI</a></h3>
 
+<br>
 <br>
 <br>
 <p id="get_started"></p>
@@ -90,7 +92,7 @@ In `project.json`
 
 <br>
 
-#### Run Your Omics App
+### Run Your Omics App
 
 ```
 cd omics_app
