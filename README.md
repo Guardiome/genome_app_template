@@ -82,14 +82,13 @@ To use `code/match_g2p.py`, you'll customize `input/input.g2p.tsv`.
 - For each row in `input.g2p.tsv`, if `match.g2p.py` finds the `GENOTYPE` in the `REGION` of the given vcf, the row is added to `output.g2p.tsv`.
 
 
-- If there are multiple regions and genotypes like here:
+- If there are multiple regions and genotypes like below,they all must be true for the row to be added to `ouput.g2p.tsv`.
 
 ```bash
-NAME            REGION                                GENOTYPE        PHENOTYPE             SOURCE
+NAME            REGION                                               GENOTYPE        PHENOTYPE     SOURCE
 WASH7P;TPRXL	1:12362-29570;3:14064384-14064385	MODIFIER;HIGH	True.	Source.
 
 ```
-  they all must be true for the row to be added to `ouput.g2p.tsv`.
 
 - `match.g2p.py` searches for two types of `GENOTYPE`s in `input.g2p.tsv`: [SNPeff putative impact](http://snpeff.sourceforge.net/SnpEff_manual.html) and actual genotype (A/T, for example). Checkout the template `input.g2p.tsv`, which  contains all possible uses of `input.g2p.tsv` rows.
 
