@@ -61,15 +61,15 @@ spro run
 
 Choose to:
 
-1) [use match_g2p.py](#use-match_g2p.py) (the template code),
+1) [use the template code](#use-the-template-code),
 
 2) or [write your own code.](#write-your-own-code)
 
 <br>
 
-### Use match_g2p.py
+### Use the template code
 
-To use `match_g2p.py`, edit `input.g2p.tsv`.
+To use `code/match_g2p.py`, edit `input/input.g2p.tsv`.
 
 * Use the plus strand
   * [This variant is on the plus strand](https://www.snpedia.com/index.php/Rs53576).
@@ -122,10 +122,6 @@ At run time, Omics AI adds these key-value pairs to `project.json`.
 <br>
 <br>
 <p id="make_a_readme"></p>
-
-<div style="background-color: teal">
-  Here is some text
-</div>
 
 ## Make a README
 
