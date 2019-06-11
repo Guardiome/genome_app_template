@@ -9,6 +9,7 @@ An Omics App is a [shareable project](https://github.com/KwatME/spro) that analy
 - [Publish to Omics AI](#publish-to-omics-ai)
 
 <br>
+
 ## Omics AI API
 
 Omics AI runs an Omics App by `spro run run_omics_app`.
