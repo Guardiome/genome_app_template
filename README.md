@@ -69,22 +69,31 @@ Choose to:
 
 ### Use the template code
 
-To use `code/match_g2p.py`, you need to edit `input/input.g2p.tsv`.
+To use `code/match_g2p.py`, you'll customize `input/input.g2p.tsv`.
 
 `input.g2p.tsv` is basically a genomic lookup table. `match_g2p.py` checks the given vcf for the items in `input.g2p.tsv` and writes any matches it finds to `output.g2p.tsv`.
 
+<br>
 
-`.g2p` files have 5 required columns: `NAME`, `REGION`, `GENOTYPE`, `PHENOTYPE`, and `SOURCE`. A `.g2p` row can have variants __or__ genes, but __not both in one row__.
+#### `input.g2p.tsv`
 
-For each row in `input.g2p.tsv`, if `match.g2p.py` finds the `GENOTYPE` in the `REGION` of the given vcf, the row is added to `output.g2p.tsv`. If there are multiple regions and genotypes like here:
+`input.g2p.tsv` has 5 required columns: `NAME`, `REGION`, `GENOTYPE`, `PHENOTYPE`, and `SOURCE`.
+
+For each row in `input.g2p.tsv`, if `match.g2p.py` finds the `GENOTYPE` in the `REGION` of the given vcf, the row is added to `output.g2p.tsv`.
+
+
+If there are multiple regions and genotypes like here:
 
 ```bash
-NAME          REGION            GENOTYPE
-gene1;gene2   region1;region2   genotype1;genotype2
+NAME          REGION            GENOTYPE        PHENOTYPE             SOURCE
+WASH7P;TPRXL	1:12362-29570;3:14064384-14064385	MODIFIER;HIGH	True.	Source.
+
 ```
 they all must be true for the row to be added to `ouput.g2p.tsv`
 
-The template `input.g2p.tsv` contains all possible uses of `input.g2p.tsv` rows.
+`match.g2p.py` searches for two types of `GENOTYPE`s in `input.g2p.tsv`: [SNPeff putative impact](http://snpeff.sourceforge.net/SnpEff_manual.html) and actual genotype (A/T, for example). Checkout the template `input.g2p.tsv`, which  contains all possible uses of `input.g2p.tsv` rows.
+
+<br>
 
 #### Tips
 * Use the plus strand for variants.
@@ -105,8 +114,8 @@ Omics AI excepts your code to produce one of the following:
 
 In `project.json`
 
-    1) Dont change data file path keys.
-    2) Set `command/run_omics_app/` to your entry code file.
+  1. Dont change data file path keys.
+  2. Set `command/run_omics_app/` to your entry code file.
 
 <br>
 
