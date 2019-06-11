@@ -120,6 +120,4 @@ output_g2p_tsv_file_path = join(output_directory_path, "output.g2p.tsv")
 
 input_g2p.loc[row_match].to_csv(output_g2p_tsv_file_path, sep="\t", index=None)
 
-print()
-
 print(f"Output {output_g2p_tsv_file_path}.")
