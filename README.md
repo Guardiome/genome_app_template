@@ -8,6 +8,7 @@ An Omics App is a [shareable project](https://github.com/KwatME/spro) that analy
 - [Make a README](#make-a-readme)
 - [Publish to Omics AI](#publish-to-omics-ai)
 
+<br>
 ## Omics AI API
 
 Omics AI runs an Omics App by `spro run run_omics_app`.
@@ -20,7 +21,7 @@ At run time, Omics AI adds these key-value pairs to `project.json`.
 }
 ```
 
-
+<br>
 ## Get Started
 
 #### Install Dependencies
@@ -50,13 +51,12 @@ spro run
 
 #### [Learn spro](https://github.com/kwatme/spro)
 
-----------------------------------------------------------------------
-
-### Edit Your Omics App
+<br>
+## Edit Your Omics App
 
 Either:
 
-1) [use `match_g2p.py`](#use-match-g2p.py) by editing `input.g2p` to make `output.g2p`,
+1) [use match_g2p.py](#use-match-g2p.py) (the template code),
 
 2) or [write your own code.](#write-your-own-code)
 
@@ -73,7 +73,7 @@ To use `match_g2p.py`, edit `input.g2p.tsv`.
 <br>
 #### Write your own code
 
-Outputs allowed:
+Outputs allowed (Omics AI will show any of these):
 
 - `output/output.html`
 - `output/output.json` (1 level only)
@@ -93,31 +93,30 @@ spro enter
 spro run run_omics_app
 ```
 
----------------------------------------------------------------------------
-
+<br>
 ## Make a README
 
 Link media from `stuff/` to README if you want. [Here](https://github.com/Kazyra/muscle_type) and [here](https://github.com/yaseenkady/alcohol-skin-flush) are some Omics Apps with cool READMEs.
 
 
-----------------------------------------------------------------------------------------------
-
+<br>
 ## Publish to Omics AI
 
-#### [Add to Github](https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/)
+1) [Add to Github](https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/).
 
-`Spro share` will push changes to Github and create a release with the `version` you set in `project.json`.
+2) Run code below to push changes to Github and create a release with the `version` you set in `project.json`.
+
 ```
 cd omics_app_directory
 spro share https://github.com/username/omics_app_repository_name
 ```
 
-
-If you have any questions or concerns about publishing your Omics App, email team@guardiome.com.
-
+3) Add your Omics App [here](https://github.com/Guardiome/omics_apps_for_omics_ai/blob/master/omics_apps_for_omics_ai.yaml) and make a pull request. If merged, your Omics App will be available on Omics AI.
 
 <br>
+Email questions to team@guardiome.com.
 
+<br>
 Omics App powered by [Guardiome](https://guardiome.com)
 
 <img src="stuff/guardiome_logo.png" width="150" height="150">
