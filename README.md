@@ -85,7 +85,7 @@ To use `code/match_g2p.py`, you'll customize `input/input.g2p.tsv`.
 - If there are multiple regions and genotypes like below,they all must be true for the row to be added to `ouput.g2p.tsv`.
 
 ```bash
-NAME            REGION                                       GENOTYPE        PHENOTYPE     SOURCE
+NAME            REGION                                   GENOTYPE        PHENOTYPE     SOURCE
 WASH7P;TPRXL	1:12362-29570;3:14064384-14064385	MODIFIER;HIGH	True.	Source.
 
 ```
