@@ -43,8 +43,11 @@ spro create -g https://github.com/guardiome/omics_app_template my_omics_app
 
 ```bash
 cd my_omics_app
+
 spro enter
+
 spro build
+
 spro run run_omics_app
 ```
 
@@ -79,27 +82,26 @@ To use `code/match_g2p.py`, you'll customize `input/input.g2p.tsv`.
 
 #### `input.g2p.tsv`
 
-- `input.g2p.tsv` has 5 required columns: `NAME`, `REGION`, `GENOTYPE`, `PHENOTYPE`, and `SOURCE`.
+-   `input.g2p.tsv` has 5 required columns: `NAME`, `REGION`, `GENOTYPE`, `PHENOTYPE`, and `SOURCE`.
 
-- For each row in `input.g2p.tsv`, if `match.g2p.py` finds the `GENOTYPE` in the `REGION` of the given vcf, the row is added to `output.g2p.tsv`.
-
-
-- If there are multiple regions and genotypes like below, they all must be true for the row to be added to `ouput.g2p.tsv`.
+-   For each row in `input.g2p.tsv`, if `match.g2p.py` finds the `GENOTYPE` in the `REGION` of the given vcf, the row is added to `output.g2p.tsv`.
 
 
-| NAME                  | REGION                               | GENOTYPE      | PHENOTYPE | SOURCE  |
-| :-------------------- | :----------------------------------- | :------------ | :-------- | :------ |
-| WASH7P;TPRXL          | 1:12362-29570;3:14064384-14064385    | MODIFIER;HIGH | True.     | Source. |
+-   If there are multiple regions and genotypes like below, they all must be true for the row to be added to `ouput.g2p.tsv`.
 
+| NAME         | REGION                            | GENOTYPE      | PHENOTYPE | SOURCE  |
+| :----------- | :-------------------------------- | :------------ | :-------- | :------ |
+| WASH7P;TPRXL | 1:12362-29570;3:14064384-14064385 | MODIFIER;HIGH | True.     | Source. |
 
-- `match.g2p.py` searches for two types of `GENOTYPE`s in `input.g2p.tsv`: [SNPeff putative impact](http://snpeff.sourceforge.net/SnpEff_manual.html) (MODIFIER, MODERATE, or HIGH) and actual genotype (A/T, for example). Checkout the template `input.g2p.tsv`, which  contains all possible uses of `input.g2p.tsv` rows.
+-   `match.g2p.py` searches for two types of `GENOTYPE`s in `input.g2p.tsv`: [SNPeff putative impact](http://snpeff.sourceforge.net/SnpEff_manual.html) (MODIFIER, MODERATE, or HIGH) and actual genotype (A/T, for example). Checkout the template `input.g2p.tsv`, which  contains all possible uses of `input.g2p.tsv` rows.
 
 <br>
 
 #### Tips
-* `REGION`s must be for GRCH38.
-* Use the plus strand for variants.
-  * [This variant is on the minus strand](https://www.snpedia.com/index.php/Rs1051730), so you would use its complement, `G|G` (the plus strand genotype) to look for normal smoker behavior.
+
+-   `REGION`s must be for GRCH38.
+-   Use the plus strand for variants.
+    -   [This variant is on the minus strand](https://www.snpedia.com/index.php/Rs1051730), so you would use its complement, `G|G` (the plus strand genotype) to look for normal smoker behavior.
 
 <br>
 
@@ -109,22 +111,25 @@ Add software your code depends on with `spro install`.
 
 Omics AI expects your code to produce one of the following:
 
-- `output/output.html`
-- `output/output.json` (1 level only)
-- `ouput/output.g2p.tsv`
+-   `output/output.html`
+-   `output/output.json` (1 level only)
+-   `ouput/output.g2p.tsv`
 
 In `project.json`
 
-  1. Dont change data file path keys.
-  2. Set `command/run_omics_app/` to your entry code file.
+1.  Dont change data file path keys.
+2.  Set `command/run_omics_app/` to your entry code file.
 
 <br>
 
 ### Run Your Omics App
 
-```
+```bash
 cd omics_app
+
 spro enter
+
+
 spro run run_omics_app
 ```
 
@@ -154,7 +159,6 @@ At run time, Omics AI adds these key-value pairs to `project.json`.
 
 Link things from `stuff/` to README if you want. [Here](https://github.com/kwatme/muscle_type) and [here](https://github.com/yaseenkady/alcohol-skin-flush) are some Omics Apps with cool READMEs.
 
-
 <br>
 <br>
 <br>
@@ -166,10 +170,8 @@ Link things from `stuff/` to README if you want. [Here](https://github.com/kwatm
 
 2) Run code below to push changes to Github and create a release with the `version` you set in `project.json`.
 
-```
-cd omics_app_directory
-spro share https://github.com/username/omics_app_repository_name
-```
+    cd omics_app_directory
+    spro share https://github.com/username/omics_app_repository_name
 
 3) Add your Omics App [here](https://github.com/Guardiome/omics_apps_for_omics_ai/blob/master/omics_apps_for_omics_ai.yaml) and make a pull request. If merged, your Omics App will be available on Omics AI.
 
