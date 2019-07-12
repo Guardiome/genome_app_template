@@ -4,7 +4,7 @@
 
 <h1 align="center">Omics App Template</h1>
 
-<p align="center">An Omics App is a <a href="https://github.com/Guardiome/spro">shareable project</a> that analyzes omics data and is integrable with <a href="https://guardiome.com">Omics AI</a>.</p>
+<p align="center">An Omics App is a <a href="https://guardiome.com">shareable project</a> that analyzes omics data and is integrable with <a href="https://guardiome.com">Omics AI</a>.</p>
 
 <br>
 
@@ -66,7 +66,7 @@ This is essential for understanding Omics Apps.
 
 Choose to:
 
-1) [use the template code](#use-the-template-code),
+1) [use the template code](#use-the-template-code), 
 
 2) or [write your own code.](#write-your-own-code)
 
@@ -74,48 +74,47 @@ Choose to:
 
 ### Use the template code
 
-To use `code/match_g2p.py`, you'll customize `input/input.g2p.tsv`.
+To use `code/match_g2p.py` , you'll customize `input/input.g2p.tsv` .
 
-`input.g2p.tsv` is basically a genomic lookup table. `match_g2p.py` checks the given vcf for the items in `input.g2p.tsv` and writes any matches it finds to `output.g2p.tsv`.
+ `input.g2p.tsv` is basically a genomic lookup table. `match_g2p.py` checks the given vcf for the items in `input.g2p.tsv` and writes any matches it finds to `output.g2p.tsv` .
 
 <br>
 
-#### `input.g2p.tsv`
+#### `input.g2p.tsv` 
 
--   `input.g2p.tsv` has 5 required columns: `NAME`, `REGION`, `GENOTYPE`, `PHENOTYPE`, and `SOURCE`.
+* `input.g2p.tsv` has 5 required columns: `NAME` , `REGION` , `GENOTYPE` , `PHENOTYPE` , and `SOURCE` .
 
--   For each row in `input.g2p.tsv`, if `match.g2p.py` finds the `GENOTYPE` in the `REGION` of the given vcf, the row is added to `output.g2p.tsv`.
+*   For each row in `input.g2p.tsv` , if `match.g2p.py` finds the `GENOTYPE` in the `REGION` of the given vcf, the row is added to `output.g2p.tsv` .
 
-
--   If there are multiple regions and genotypes like below, they all must be true for the row to be added to `ouput.g2p.tsv`.
+*   If there are multiple regions and genotypes like below, they all must be true for the row to be added to `ouput.g2p.tsv` .
 
 | NAME         | REGION                            | GENOTYPE      | PHENOTYPE | SOURCE  |
 | :----------- | :-------------------------------- | :------------ | :-------- | :------ |
-| WASH7P;TPRXL | 1:12362-29570;3:14064384-14064385 | MODIFIER;HIGH | True.     | Source. |
+| WASH7P; TPRXL | 1:12362-29570; 3:14064384-14064385 | MODIFIER; HIGH | True.     | Source. |
 
--   `match.g2p.py` searches for two types of `GENOTYPE`s in `input.g2p.tsv`: [SNPeff putative impact](http://snpeff.sourceforge.net/SnpEff_manual.html) (MODIFIER, MODERATE, or HIGH) and actual genotype (A/T, for example). Checkout the template `input.g2p.tsv`, which  contains all possible uses of `input.g2p.tsv` rows.
+* `match.g2p.py` searches for two types of `GENOTYPE` s in `input.g2p.tsv` : [SNPeff putative impact](http://snpeff.sourceforge.net/SnpEff_manual.html) (MODIFIER, MODERATE, or HIGH) and actual genotype (A/T, for example). Checkout the template `input.g2p.tsv` , which  contains all possible uses of `input.g2p.tsv` rows.
 
 <br>
 
 #### Tips
 
--   `REGION`s must be for GRCH38.
--   Use the plus strand for variants.
-    -   [This variant is on the minus strand](https://www.snpedia.com/index.php/Rs1051730), so you would use its complement, `G|G` (the plus strand genotype) to look for normal smoker behavior.
+* `REGION` s must be for GRCH38.
+*   Use the plus strand for variants.
+    +   [This variant is on the minus strand](https://www.snpedia.com/index.php/Rs1051730), so you would use its complement, `G|G` (the plus strand genotype) to look for normal smoker behavior.
 
 <br>
 
 ### Write your own code
 
-Add software your code depends on with `spro install`.
+Add software your code depends on with `spro install` .
 
 Omics AI expects your code to produce one of the following:
 
--   `output/output.html`
--   `output/output.json` (1 level only)
--   `ouput/output.g2p.tsv`
+* `output/output.html` 
+* `output/output.json` (1 level only)
+* `ouput/output.g2p.tsv` 
 
-In `project.json`
+In `project.json` 
 
 1.  Dont change data file path keys.
 2.  Set `command/run_omics_app/` to your entry code file.
@@ -129,7 +128,6 @@ cd omics_app
 
 spro enter
 
-
 spro run run_omics_app
 ```
 
@@ -140,9 +138,9 @@ spro run run_omics_app
 
 ## Learn Omics AI API
 
-Omics AI runs an Omics App by `spro run run_omics_app`.
+Omics AI runs an Omics App by `spro run run_omics_app` .
 
-At run time, Omics AI adds these key-value pairs to `project.json`.
+At run time, Omics AI adds these key-value pairs to `project.json` .
 
 ```json
 {
@@ -168,10 +166,10 @@ Link things from `stuff/` to README if you want. [Here](https://github.com/kwatm
 
 1) [Add to Github](https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/).
 
-2) Run code below to push changes to Github and create a release with the `version` you set in `project.json`.
+2) Run code below to push changes to Github and create a release with the `version` you set in `project.json` .
 
     cd omics_app_directory
-    spro share https://github.com/username/omics_app_repository_name
+    spro share https: //github.com/username/omics_app_repository_name
 
 3) Add your Omics App [here](https://github.com/Guardiome/omics_apps_for_omics_ai/blob/master/omics_apps_for_omics_ai.yaml) and make a pull request. If merged, your Omics App will be available on Omics AI.
 
@@ -179,6 +177,7 @@ Link things from `stuff/` to README if you want. [Here](https://github.com/kwatm
 <br>
 <br>
 
-Feel free to [create an issue](https://github.com/Guardiome/omics_app_template/issues/new).
+[Shareable Project](https://github.com/Guardiome/spro) powered by [Guardiome](https://guardiome.com)
 
-<img src="stuff/guardiome_logo.png" width="160" height="160">
+[<img src="stuff/guardiome_logo.png" width="160" height="160">](https://guardiome.com)
+
