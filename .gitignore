@@ -14,5 +14,8 @@ output/*
 !environment/*.yaml
 
 # ==============================================================================
-# Default .gitignore rules for Omics App
+# Default .gitignore rules for Omics App.
 # ==============================================================================
+!stuff/guardiome_logo.png
+!stuff/omics_app_logo.png
+!stuff/icon.png
