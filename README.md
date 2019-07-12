@@ -181,4 +181,4 @@ Link things from `stuff/` to README if you want. [Here](https://github.com/kwatm
 
 Feel free to [create an issue](https://github.com/Guardiome/omics_app_template/issues/new).
 
-<img src="stuff/guardiome_logo.png" width="150" height="150">
+<img src="stuff/guardiome_logo.png" width="160" height="160">
