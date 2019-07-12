@@ -74,7 +74,7 @@ for g2p_row_index, g2p_row in input_g2p.iterrows():
 
             row_element_match.append(
                 any(
-                    genotype in get_vcf_info_ann(variant[7], "impact")
+                    genotype in get_vcf_info_ann(variant[7], "effect")
                     for variant in variants
                 )
             )
@@ -105,18 +105,16 @@ for g2p_row_index, g2p_row in input_g2p.iterrows():
 
                 raise ValueError("There are multiple variants.")
 
-            print(f"Sample genotype: {sample_genotype}")
-
             row_element_match.append(
                 set(sample_genotype) == set(genotype.split(sep="|"))
             )
-
-    print(f"This row is a match: {all(row_element_match)}")
 
     row_match.append(all(row_element_match))
 
 output_g2p_tsv_file_path = join(output_directory_path, "output.g2p.tsv")
 
 input_g2p.loc[row_match].to_csv(output_g2p_tsv_file_path, sep="\t", index=None)
+
+print()
 
 print(f"Output {output_g2p_tsv_file_path}.")

@@ -17,6 +17,7 @@ output/*
 # Default .gitignore rules for Simple Omics App
 # ==============================================================================
 !input/input.g2p.tsv
+!input/example
 
 # ==============================================================================
 # Additional rules.

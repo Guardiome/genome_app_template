@@ -3,13 +3,6 @@
   "git_url": "https://github.com/Guardiome/omics_app_template",
   "version": "0.0.1",
   "keyword": [],
-  "environment": [
-    "pip install kraft",
-    "conda install --prefix PROJECT_ENVIRONMENT_DIRECTORY_PATH --channel bioconda --yes htslib",
-    "conda install --prefix PROJECT_ENVIRONMENT_DIRECTORY_PATH --channel bioconda --yes samtools",
-    "conda install --prefix PROJECT_ENVIRONMENT_DIRECTORY_PATH --channel bioconda --yes samtools=1.9=h8ee4bcc_1",
-    "conda install --prefix PROJECT_ENVIRONMENT_DIRECTORY_PATH --channel conda-forge --yes openssl=1.0.2"
-  ],
   "download": {
     "input": [
       "https://s3-us-west-1.amazonaws.com/guardiome.omics-data/Homo_sapiens.GRCh38.dna.primary_assembly.fa.bgz",
