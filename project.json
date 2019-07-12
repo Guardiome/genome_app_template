@@ -1,17 +1,10 @@
 {
-  "name": "",
-  "git_url": "https://github.com/Guardiome/omics_app_template",
+  "name": "Omics App",
+  "git_url": "https://github.com/Guardiome/omics_app",
   "version": "0.0.1",
   "keyword": [],
-  "download": {
-    "input": [
-      "https://s3-us-west-1.amazonaws.com/guardiome.omics-data/Homo_sapiens.GRCh38.dna.primary_assembly.fa.bgz",
-      "https://s3-us-west-1.amazonaws.com/guardiome.omics-data/Homo_sapiens.GRCh38.dna.primary_assembly.fa.bgz.fai",
-      "https://s3-us-west-1.amazonaws.com/guardiome.omics-data/Homo_sapiens.GRCh38.dna.primary_assembly.fa.bgz.gzi"
-    ]
-  },
+  "download": {},
   "command": {
-    "run_omics_app": "python code/match_g2p.py"
-  },
-  "vcf_gz_file_path": "input/example.vcf.gz"
+    "run_omics_app": ""
+  }
 }
