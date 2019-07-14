@@ -1,6 +1,3 @@
-# Omics App
-
-Omics App :snowflake: template :kimono:
 
 <br>
 

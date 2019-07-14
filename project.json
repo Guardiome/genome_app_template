@@ -2,7 +2,9 @@
   "name": "",
   "git_url": "",
   "version": "0.0.1",
-  "keyword": [],
+  "keyword": [
+    "Omics App"
+  ],
   "download": {},
   "command": {
     "run_omics_app": ""

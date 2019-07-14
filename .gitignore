@@ -18,5 +18,5 @@ output/*
 # ==============================================================================
 # Default .gitignore rules for Omics App.
 # ==============================================================================
+!stuff/omics_app_icon.png
 !stuff/omics_app_logo.png
-!stuff/icon.png
