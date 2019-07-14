@@ -7,6 +7,6 @@
   ],
   "download": {},
   "command": {
-    "run_omics_app": ""
+    "omics_app": ""
   }
 }
