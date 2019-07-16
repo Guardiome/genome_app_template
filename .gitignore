@@ -11,12 +11,15 @@ output/*
 !output/.gitkeep
 !stuff/.gitkeep
 
-!environment/*.yaml
+!environment/*.conda.yaml
+
+!environment/Project.toml
+!environment/Manifest.toml
 
 !stuff/guardiome_logo.png
 
 # ==============================================================================
 # Default .gitignore rules for Omics App.
 # ==============================================================================
-!stuff/omics_app_icon.png
 !stuff/omics_app_logo.png
+!stuff/omics_app_icon.png
