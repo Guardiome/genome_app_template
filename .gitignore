@@ -1,5 +1,5 @@
 # ==============================================================================
-# Default .gitignore rules for shareable project.
+# Rule for Shareable Project
 # ==============================================================================
 environment/*
 input/*
@@ -19,7 +19,7 @@ output/*
 !stuff/guardiome_logo.png
 
 # ==============================================================================
-# Default .gitignore rules for Omics App.
+# Rule for Omics App
 # ==============================================================================
 !stuff/omics_app_logo.png
 !stuff/omics_app_icon.png
