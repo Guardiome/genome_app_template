@@ -12,7 +12,6 @@ output/*
 !stuff/.gitkeep
 
 !environment/*.conda.yaml
-
 !environment/Project.toml
 !environment/Manifest.toml
 
